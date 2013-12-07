@@ -83,7 +83,7 @@ a:active, a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.5em 0; }
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -314,26 +314,74 @@ table {
   width: 940px;
   margin: 0 auto; }
 
+section {
+  width: 100%;
+  display: inline-block;
+  padding: 4.375em 0; }
+
 @font-face {
   font-family: 'komika';
-  src: url("KomikaTitle-Paint-webfont.eot");
-  src: url("KomikaTitle-Paint-webfont.eot?#iefix") format("embedded-opentype"), url("KomikaTitle-Paint-webfont.woff") format("woff"), url("KomikaTitle-Paint-webfont.ttf") format("truetype"), url("KomikaTitle-Paint-webfont.svg#komika_title_-_paintregular") format("svg");
+  src: url("../../scss/vendors/komika-title/KomikaTitle-Paint-webfont.eot");
+  src: url("../../scss/vendors/komika-title/KomikaTitle-Paint-webfont.eot?#iefix") format("embedded-opentype"), url("../../scss/vendors/komika-title/KomikaTitle-Paint-webfont.woff") format("woff"), url("../../scss/vendors/komika-title/KomikaTitle-Paint-webfont.ttf") format("truetype"), url("../../scss/vendors/komika-title/KomikaTitle-Paint-webfont.svg#komika_title_-_paintregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'OpenSans-bold';
-  src: url("OpenSans-Bold-webfont.eot");
-  src: url("OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Bold-webfont.woff") format("woff"), url("OpenSans-Bold-webfont.ttf") format("truetype"), url("OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  src: url("../../scss/vendors/opensans_bold/OpenSans-Bold-webfont.eot");
+  src: url("../../scss/vendors/opensans_bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../scss/vendors/opensans_bold/OpenSans-Bold-webfont.woff") format("woff"), url("../../scss/vendors/opensans_bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../scss/vendors/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'OpenSans-regular';
-  src: url("OpenSans-Regular-webfont.eot");
-  src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  src: url("../../scss/vendors/opensans_regular/OpenSans-Regular-webfont.eot");
+  src: url("../../scss/vendors/opensans_regular/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../scss/vendors/opensans_regular/OpenSans-Regular-webfont.woff") format("woff"), url("../../scss/vendors/opensans_regular/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../scss/vendors/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.main-menu a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-family: OpenSans-bold, sans-serif;
+  font-weight: bold;
+  color: white; }
+
+.hero-tagline {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-family: OpenSans-bold, sans-serif;
+  font-weight: bold;
+  color: white; }
+
+.hero-headline {
+  font-size: 52px;
+  font-size: 3.25rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  font-family: 'komika',sans-serif;
+  color: #fe6336; }
+
+.section-title, .obst-desc-headline {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 48px;
+  line-height: 3rem;
+  text-shadow: 4px 4px rbga(0, 0, 0, 0.5);
+  font-family: komika,sans-serif;
+  color: white; }
+
+.obst-title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  font-family: komika,sans-serif;
+  color: white; }
 
 /* BASE STYLES */
 * {
@@ -355,3 +403,76 @@ body {
 
 /* Patterns/Modules (tabs/lists) */
 /* Sections (header/footer) */
+header {
+  position: fixed;
+  width: 100%;
+  padding: .5em 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10; }
+
+.main-menu {
+  width: 640px;
+  margin: 0 auto; }
+.main-menu a {
+  display: inline-block;
+  margin: 0 1em;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+.main-menu a:hover {
+  color: #f4ea00; }
+
+.hero {
+  background: url("../../img/home-splat.png") no-repeat;
+  background-size: 100%;
+  text-align: center; }
+
+.logo-wrap {
+  display: inline-block;
+  max-width: 34.375em;
+  position: relative; }
+
+.hero-green-splat {
+  margin: 0 auto; }
+
+.triple-dare-logo {
+  position: absolute;
+  top: 23%;
+  left: 23%; }
+
+.hero-headline {
+  text-shadow: 2px 2px white;
+  margin-bottom: .35em; }
+
+.obstacles {
+  background: url(../../img/texture-orange.png) center top repeat #fe6336;
+  background-color: #fe6336; }
+
+.obst-grid {
+  width: 52.1276596%;
+  float: left; }
+
+.obst-tile {
+  position: relative;
+  display: inline-block;
+  height: 13.75em;
+  width: 13.75em;
+  text-align: center;
+  background-color: #80b238;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px; }
+
+.obst-tile img {
+  width: 55%;
+  margin: auto; }
+
+.obst-title {
+  position: absolute;
+  bottom: 0;
+  left: 4em; }

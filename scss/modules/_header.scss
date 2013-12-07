@@ -1,0 +1,30 @@
+header {
+	position:fixed;
+	width:100%;
+	padding:.5em 0;
+
+	background-color:$black-transparent;
+	z-index: 10;
+}
+
+.main-menu {
+
+	width:640px;
+	margin:0 auto;
+
+
+	& a {
+		display:inline-block;
+		margin:0 1em;
+		
+
+		@extend %main-menu;
+		color:$white;
+		text-transform: uppercase;
+		@include transition(all .2s);
+		&:hover {
+			color:$yellow;
+		}
+	}
+
+}
