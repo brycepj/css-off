@@ -1,0 +1,33 @@
+.hero {
+	background:url('../../img/home-splat.png') no-repeat;
+	background-size:100%;
+	text-align: center;
+}
+
+.logo-wrap {
+	display:inline-block;
+	max-width:34.375em;
+	
+	position:relative;
+}
+
+.hero-green-splat {
+	margin:0 auto;
+
+}
+
+.triple-dare-logo {
+	position:absolute;
+	top:23%; left:23%;
+}
+
+.hero-headline {
+	@extend %headline;
+	@include text-shadow(2px 2px $white);
+	margin-bottom:.35em;
+}
+
+.hero-tagline {
+	@extend %header-tagline;
+
+}

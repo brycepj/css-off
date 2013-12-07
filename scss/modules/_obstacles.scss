@@ -1,0 +1,50 @@
+.obstacles {
+	background:url(../../img/texture-orange.png) center top repeat $red;
+	background-color:$red;
+}
+
+.obst-grid {
+	width:52.1276596%;
+	float:left;
+}
+
+.obst-tile {
+	position:relative;
+	display:inline-block;
+	height:13.75em; width:13.75em;
+
+	text-align: center;
+
+
+	background-color:$green;
+	@include border-radius(7px);
+
+}
+
+.obst-tile img {
+	width:55%;
+	margin:auto;
+}
+
+.obst-title {
+	@extend %item-title;
+	position:absolute;
+	bottom:0;
+	left:4em;
+}
+
+.obst-desc {
+
+}
+
+.obst-desc-headline {
+	@extend %section-title;
+}
+
+.obst-desc-tagline {
+
+}
+
+.obst-desc-img {
+
+}
