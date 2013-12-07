@@ -1,0 +1,30 @@
+@import "compass/css3";
+@import "_normalize";
+@import "_mixins";
+@import "_layout";
+@import "_fonts";
+@import "_swatch";
+
+/* BASE STYLES */
+
+$baseFontSize:100%;
+$baseLineHeight:100%;
+
+* {
+	@include box-sizing(border-box);
+}
+
+img{
+    max-width:100% !important;
+    height:auto;
+    display:block;
+}
+
+a {
+	text-decoration:none;
+}
+
+body {
+	font-size:$baseFontSize;
+	line-height: $baseLineHeight;
+}
