@@ -26,16 +26,34 @@
 	@include font-size(2.5,3);
 	@include text-shadow(4px 4px rbga(0,0,0,.5));
 
-	font-family:komika,sans-serif;
+	font-family:'komika',sans-serif;
 	color:$white;
 }
 
 .section-title {
 	@extend %section-title;
+	display:block;
+	background:url(../../img/heading.png) repeat-x;
 } 
 
+%feature-title {
+	@include font-size(2.4375,3);
+	@include text-shadow(4px 4px rbga(0,0,0,.5));
+
+	font-family:'komika',sans-serif;
+	color:$white;
+}
+
+%feature-tagline {
+	@include font-size(1.3125,1.5);
+	@include text-shadow(4px 4px rbga(0,0,0,.5));
+
+	font-family:'komika',sans-serif;
+	color:$white;
+}
+
 %item-title {
-	@include font-size(1,1.25);
+	@include font-size(1,1);
 	font-family:komika,sans-serif;
 	color:$white;
 } 
