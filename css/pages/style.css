@@ -310,71 +310,31 @@ table {
 
 /*** MEDIA QUERIES/BREAKPOINTS ***/
 /*** REM FONT-SIZE AND LINE HEIGHT ***/
+.inner {
+  width: 940px;
+  margin: 0 auto; }
+
 @font-face {
-  font-family: 'komika_title_-_paintregular';
+  font-family: 'komika';
   src: url("KomikaTitle-Paint-webfont.eot");
   src: url("KomikaTitle-Paint-webfont.eot?#iefix") format("embedded-opentype"), url("KomikaTitle-Paint-webfont.woff") format("woff"), url("KomikaTitle-Paint-webfont.ttf") format("truetype"), url("KomikaTitle-Paint-webfont.svg#komika_title_-_paintregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sansbold';
+  font-family: 'OpenSans-bold';
   src: url("OpenSans-Bold-webfont.eot");
   src: url("OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Bold-webfont.woff") format("woff"), url("OpenSans-Bold-webfont.ttf") format("truetype"), url("OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sansregular';
+  font-family: 'OpenSans-regular';
   src: url("OpenSans-Regular-webfont.eot");
   src: url("OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("OpenSans-Regular-webfont.woff") format("woff"), url("OpenSans-Regular-webfont.ttf") format("truetype"), url("OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/*  
-
-font-family: 'komika_title_-_paintregular';
-
-
-font-family:'Open Sans', sans-serif;
-
-
-%font1 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-%font2 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-%font3 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-%font4 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-%font5 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-*/
 /* BASE STYLES */
 * {
   -webkit-box-sizing: border-box;

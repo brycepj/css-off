@@ -2,47 +2,34 @@
 @import '../vendors/opensans_bold/_open-sans-bold';
 @import '../vendors/opensans_regular/_open-sans-regular';
 
-/*  
-
-font-family: 'komika_title_-_paintregular';
-
-
-font-family:'Open Sans', sans-serif;
-
-
-%font1 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
+%primary-menu {
+	@include font-size(1.125,1.5);
+	font-family:OpenSans-bold, sans-serif;
+	font-weight:bold;
+	color:$white;
 } 
 
-%font2 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
+%headline {
+	@include font-size(3.25,3.75);
+	font-family:komika,sans-serif;
+	color:$red;
+}
+
+%section-title {
+	@include font-size(2.5,3);
+	font-family:komika,sans-serif;
+	color:$white;
 } 
 
-%font3 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
+%item-title {
+	@include font-size(1,1.25);
+	font-family:komika,sans-serif;
+	color:$white;
 } 
 
-%font4 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
+%body-text {
+	@include font-size(.875,1);
+	font-family:OpenSans-regular,sans-serif;
+	color:$white;
 } 
 
-%font5 {
-	@include font-size($sizeValue,$heightValue);
-	font-family:;
-	font-weight:;
-	color:inherit;
-} 
-
-*/
