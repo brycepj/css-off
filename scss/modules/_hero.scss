@@ -24,7 +24,7 @@
 
 @-webkit-keyframes gush {
 	0%,100% {
-		@include scale(1.2);
+		@include scale(1.15);
 	}
 	50% {
 		@include scale(1);
@@ -33,7 +33,7 @@
 
 @keyframes gush {
 	0%,100% {
-		@include scale(1.2);
+		@include scale(1.15);
 	}
 	50% {
 		@include scale(1);

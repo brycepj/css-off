@@ -471,11 +471,11 @@ body {
 
 @-webkit-keyframes gush {
   0%,100% {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2); }
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15); }
 
   50% {
     -webkit-transform: scale(1, 1);
@@ -486,11 +486,11 @@ body {
 
 @keyframes gush {
   0%,100% {
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2); }
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15); }
 
   50% {
     -webkit-transform: scale(1, 1);
@@ -673,6 +673,16 @@ body {
 
 .prize-title {
   margin: 1em; }
+
+.sign-up {
+  background: url(../../img/texture-green.png) repeat left top;
+  background-color: #80c1d6; }
+
+.sign-up .section-title {
+  background: url(../../img/texture-blue.png) repeat left top;
+  background-color: #80c1d6;
+  display: inline-block;
+  padding-right: 1.7em; }
 
 /* States */
 .obst-tile.is-selected {
