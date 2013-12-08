@@ -59,8 +59,9 @@
 } 
 
 %body-text {
-	@include font-size(.875,1);
-	font-family:OpenSans-regular,sans-serif;
+	@include font-size(1,1.25);
+	font-family:OpenSans-bold,sans-serif;
+	
 	color:$white;
 } 
 
