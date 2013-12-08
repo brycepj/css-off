@@ -750,13 +750,12 @@ input[type="text"] {
   position: relative;
   padding: 1.05em .5em;
   margin-bottom: 1em;
-  overflow: hidden;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px; }
-.sign-up form a img {
+.sign-up form a .dropdown-select {
   position: absolute;
   right: 0;
   top: 0; }
@@ -766,6 +765,64 @@ input[type="text"] {
 
 .gender {
   width: 35%; }
+
+.dropdown {
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+  width: 100%;
+  background-color: #f4ea00;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+.gender .dropdown {
+  bottom: -69px !important;
+  left: 0px; }
+
+.dropdown div[class^="dd"] {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: .75em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+.dropdown div[class^="dd"]:hover {
+  position: relative;
+  top: -2px; }
+
+.dd-blue {
+  background-color: #80c1d6; }
+
+.dd-green {
+  background-color: #80b238; }
+
+.dd-pink {
+  background-color: #fe6336; }
+
+.dd-purple {
+  background-color: #c52f7b; }
+
+.dropdown > img {
+  position: relative;
+  display: inline-block;
+  margin: .75em 1.25em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+.dropdown > img:hover {
+  position: relative;
+  top: -2px; }
 
 .submit-btn-wrap {
   display: inline-block;
