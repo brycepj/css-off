@@ -1,6 +1,14 @@
 .obstacles {
-	background:url(../../img/texture-orange.png) center top repeat $red;
+	background:url(../../img/texture-orange.png) center top repeat;
 	background-color:$red;
+
+}
+
+.obstacles .section-title {
+	background:url(../../img/texture-orange.png) left center repeat;
+	background-color:$red;
+	display:inline-block;
+	padding-right: 1.6em;
 }
 
 .obst-grid {
@@ -119,7 +127,7 @@
 
 
 .obst-featured-img {
-	margin:12em 0 0 8em;
+	margin:10em 0 0 8em;
 }
 
 

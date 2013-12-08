@@ -18,12 +18,12 @@
 
         <!-- Add your site or application content here -->
        
-        <header>
+        <header id="top" class="primary-header">
             <nav class="main-menu">
-                <a href="">obstacles</a>
-                <a href="">prizes</a>
-                <a href="">be a contestant</a>
-                <a href="">back to top</a>
+                <a href="#obstacles">obstacles</a>
+                <a href="#prizes">prizes</a>
+                <a href="#sign-up">be a contestant</a>
+                <a href="#top">back to top</a>
             </nav>
         </header>
 
@@ -37,9 +37,10 @@
             </div>
         </section>
 
-        <section class="obstacles">
+        <section id="obstacles" class="obstacles">
             <div class="inner">
-                <h2 class="section-title">obstacles</h2>
+                <header class="section-header">
+                <h2 class="section-title">obstacles</h2></header>
                 <div class="obst-grid cf">
                     <div id="the-tank"class="obst-tile"target="1">
                         <img src="img/obstacle-the-tank-large.png" alt="">
@@ -77,9 +78,11 @@
 
         </section>
 
-        <section class="prizes">
+        <section id="prizes" class="prizes">
             <div class="inner">
+                <header class="section-header">
             <h2 class="section-title">prizes</h2>
+            </header>
             <div class="prize-tile">
                 <img src="" alt="" class="prize-img">
                 <h3 class="prize-title">prize 1</h3>
@@ -99,9 +102,10 @@
             </div>
         </section>
 
-        <section class="sign-up">
+        <section id="sign-up" class="sign-up">
             <div class="inner">
-                <h2 class="section-title">be a contestant</h2>
+                <header class="section-header">
+                <h2 class="section-title">be a contestant</h2></header>
                 <div class="sign-up-form"></div>
                 <div class="timer"></div>
                 <div class="submit-btn"></div>
@@ -109,7 +113,7 @@
             </div>
         </section>
 
-        footer
+        <footer></footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

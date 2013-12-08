@@ -2,6 +2,7 @@
 	background:url('../../img/home-splat.png') no-repeat;
 	background-size:100%;
 	text-align: center;
+	@include box-shadow(0 0 0 0);
 }
 
 .logo-wrap {
@@ -13,7 +14,30 @@
 
 .hero-green-splat {
 	margin:0 auto;
+	
+	animation:gush 2s infinite;
+	-webkit-animation:gush 2s infinite;
 
+
+}
+
+
+@-webkit-keyframes gush {
+	0%,100% {
+		@include scale(1.2);
+	}
+	50% {
+		@include scale(1);
+	}
+}
+
+@keyframes gush {
+	0%,100% {
+		@include scale(1.2);
+	}
+	50% {
+		@include scale(1);
+	}
 }
 
 .triple-dare-logo {

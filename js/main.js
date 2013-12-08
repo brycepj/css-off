@@ -29,5 +29,19 @@ $('.obst-desc-tagline').load("http://127.0.0.1:8888/css-off/ajax/"+taglineTarget
 
 
 
+	$('a[href*=#]').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 800);
+    return false;
+});
+
+
+
+
+
+
+
+
    
 })(jQuery);
