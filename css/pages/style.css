@@ -347,7 +347,7 @@ table {
   font-weight: bold;
   color: white; }
 
-.hero-tagline {
+.hero-tagline, .network-title {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 24px;
@@ -397,6 +397,14 @@ table {
   line-height: 16px;
   line-height: 1rem;
   font-family: komika,sans-serif;
+  color: white; }
+
+.network-info p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 16px;
+  line-height: 1rem;
+  font-family: OpenSans-regular,sans-serif;
   color: white; }
 
 .timer-display {
@@ -797,6 +805,18 @@ input[type="text"] {
   width: 11em;
   margin: 2em 0;
   text-align: center; }
+
+.network-info {
+  position: relative;
+  border-top: 7px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 7px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none !important; }
+
+.kn-logo {
+  margin: 0 auto;
+  position: absolute;
+  top: -40px;
+  left: 43%; }
 
 /* States */
 .obst-tile.is-selected {
