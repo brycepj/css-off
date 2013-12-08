@@ -1,0 +1,24 @@
+.timer {
+	width:26.5625em;float:left;
+	position:relative;
+	margin: 3em 0 0 5em;
+}
+
+.timer-img {
+	margin:0 auto;
+}
+
+.timer-display {
+	@extend %timer-font;
+	position:absolute; top:1.2em; left:27%;
+}
+
+.timer-reset {
+	display:inline-block;
+	width:11em;
+	@extend %feature-title;
+
+	margin:2em 0;
+
+	text-align: center;
+}

@@ -331,6 +331,13 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'dd-fat';
+  src: url("../../scss/vendors/digitaldreamfat_regular/DIGITALDREAMFAT-webfont.eot");
+  src: url("../../scss/vendors/digitaldreamfat_regular/DIGITALDREAMFAT-webfont.eot?#iefix") format("embedded-opentype"), url("../../scss/vendors/digitaldreamfat_regular/DIGITALDREAMFAT-webfont.woff") format("woff"), url("../../scss/vendors/digitaldreamfat_regular/DIGITALDREAMFAT-webfont.ttf") format("truetype"), url("../../scss/vendors/digitaldreamfat_regular/DIGITALDREAMFAT-webfont.svg#digital_dream_fatregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .main-menu a {
   font-size: 18px;
   font-size: 1.125rem;
@@ -366,7 +373,7 @@ table {
   font-family: 'komika',sans-serif;
   color: white; }
 
-.obst-desc-headline {
+.obst-desc-headline, .timer-reset {
   font-size: 39px;
   font-size: 2.4375rem;
   line-height: 48px;
@@ -375,7 +382,7 @@ table {
   font-family: 'komika',sans-serif;
   color: white; }
 
-.obst-desc-tagline {
+.obst-desc-tagline, .sign-up input[type=submit] {
   font-size: 21px;
   font-size: 1.3125rem;
   line-height: 24px;
@@ -384,13 +391,22 @@ table {
   font-family: 'komika',sans-serif;
   color: white; }
 
-.obst-title, .prize-title {
+.obst-title, .prize-title, input[type="text"], .sign-up form a {
   font-size: 16px;
   font-size: 1rem;
   line-height: 16px;
   line-height: 1rem;
   font-family: komika,sans-serif;
   color: white; }
+
+.timer-display {
+  font-size: 128px;
+  font-size: 8rem;
+  line-height: 16px;
+  line-height: 1rem;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'dd-fat';
+  color: #f4ea00; }
 
 .inner {
   width: 940px;
@@ -683,6 +699,104 @@ body {
   background-color: #80c1d6;
   display: inline-block;
   padding-right: 1.7em; }
+
+.sign-up-form {
+  float: left;
+  width: 23.9375em;
+  margin-top: 3em; }
+
+.sign-up form {
+  width: 100%; }
+
+input[type="text"] {
+  width: 100%;
+  display: block;
+  padding: 1em 0 .25em .55em;
+  margin-bottom: 1em;
+  border: none;
+  background-color: #fe6336;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #f4ea00; }
+
+::-webkit-input-placeholder {
+  color: white; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white; }
+
+:-ms-input-placeholder {
+  color: white; }
+
+.sign-up form a {
+  display: inline-block;
+  background-color: #fe6336;
+  position: relative;
+  padding: 1.05em .5em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+.sign-up form a img {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.team-color {
+  width: 63.5%; }
+
+.gender {
+  width: 35%; }
+
+.submit-btn-wrap {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin: 2em 5em;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg); }
+
+.sign-up input[type=submit] {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  border: none;
+  background-color: transparent;
+  z-index: 10; }
+
+.timer {
+  width: 26.5625em;
+  float: left;
+  position: relative;
+  margin: 3em 0 0 5em; }
+
+.timer-img {
+  margin: 0 auto; }
+
+.timer-display {
+  position: absolute;
+  top: 1.2em;
+  left: 27%; }
+
+.timer-reset {
+  display: inline-block;
+  width: 11em;
+  margin: 2em 0;
+  text-align: center; }
 
 /* States */
 .obst-tile.is-selected {

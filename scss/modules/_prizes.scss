@@ -1,0 +1,51 @@
+.prizes {
+	background:url(../../img/texture-green.png) repeat left top;
+	background-color:$green;
+}
+
+.prizes .section-title {
+	background:url(../../img/texture-green.png) repeat left top;
+	background-color:$green;
+	display:inline-block;
+	padding-right:1.35em;
+}
+
+.prize-tile {
+	float:left;	
+	width:45%;
+	margin:2.5%;
+	text-align: center;
+}
+
+.prize-tile:hover img {
+	@include rotate(15deg);
+}
+
+.prize-tile:nth-of-type(1) {
+}
+
+.prize-tile:nth-of-type(2) {
+}
+
+.prize-tile:nth-of-type(3) {
+	clear:both;
+	padding-top: 5em;
+
+}
+
+.prize-tile:nth-of-type(4) {
+
+margin-top: -6em;
+
+}
+
+.prize-img {
+	margin:0 auto 1em auto;
+	@include transition(all .2s);
+	display:inline-block;
+}
+
+.prize-title {
+	@extend %item-title;
+	margin:1em;
+}

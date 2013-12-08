@@ -1,0 +1,95 @@
+.sign-up-form {
+	float:left;
+	width:23.9375em;
+	margin-top: 3em;
+}
+
+.sign-up form {
+	width:100%;
+}
+
+input[type="text"] {
+	@extend %item-title;
+
+	width:100%;
+
+	display:block;
+	padding:1em 0 .25em .55em;
+	margin-bottom: 1em;
+
+	border:none;
+
+	background-color:$red;
+	@include border-radius(5px);
+
+
+	color:$yellow;
+
+}
+
+::-webkit-input-placeholder {
+   color:$white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:$white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:$white;  
+}
+
+:-ms-input-placeholder {  
+   color:$white;  
+}
+
+
+.sign-up form a {
+	@extend %item-title;	
+	display:inline-block;
+	background-color:$red;
+	position:relative;
+
+	padding:1.05em .5em;
+	margin-bottom: 1em;
+	overflow: hidden;
+
+	@include border-radius(5px);
+
+	& img {
+		position:absolute;
+		right:0;top:0;
+
+	}
+
+}
+
+.team-color {width:63.5%;}
+.gender {width:35%;}
+
+.submit-btn-wrap {
+	display:inline-block;
+	position:relative;
+	width:50%;
+	margin:2em 5em;
+
+	@include rotate(-15deg);
+
+	& img {
+	}
+}
+
+.sign-up input[type=submit] {
+	@extend %feature-tagline;
+	
+	position:absolute; top:45%; left:5%;
+
+
+	border:none;
+	background-color:transparent;
+	z-index: 10;
+
+
+}
+
+

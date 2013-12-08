@@ -1,6 +1,7 @@
 @import '../vendors/komika-title/_kamika-title';
 @import '../vendors/opensans_bold/_open-sans-bold';
 @import '../vendors/opensans_regular/_open-sans-regular';
+@import '../vendors/digitaldreamfat_regular/_digitaldreamfat.scss';
 
 %main-menu {
 	@include font-size(1.125,1.5);
@@ -49,7 +50,7 @@
 
 	font-family:'komika',sans-serif;
 	color:$white;
-}
+	}
 
 %item-title {
 	@include font-size(1,1);
@@ -62,4 +63,12 @@
 	font-family:OpenSans-regular,sans-serif;
 	color:$white;
 } 
+
+%timer-font {
+	@include font-size(8,1);
+	@include text-shadow(4px 4px rgba(0,0,0,.5));
+	font-family: 'dd-fat';
+	color:$yellow;
+
+}
 
