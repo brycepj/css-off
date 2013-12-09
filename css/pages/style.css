@@ -802,12 +802,22 @@ body {
   background-color: #80b238;
   display: inline-block;
   padding-right: 1.35em; }
+@media only screen and (max-width: 942px) {
+  .prizes .section-title {
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 250px;
+    text-align: center;
+    padding-right: 0; } }
 
 .prize-tile {
   float: left;
   width: 45%;
   margin: 2.5%;
   text-align: center; }
+@media only screen and (max-width: 510px) {
+  .prize-tile {
+    width: 95%; } }
 
 .prize-tile:hover img {
   -webkit-transform: rotate(15deg);
@@ -822,6 +832,9 @@ body {
 
 .prize-tile:nth-of-type(4) {
   margin-top: -6em; }
+@media only screen and (max-width: 510px) {
+  .prize-tile:nth-of-type(4) {
+    margin-top: 1em; } }
 
 .prize-img {
   margin: 0 auto 1em auto;

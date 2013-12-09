@@ -8,6 +8,15 @@
 	background-color:$green;
 	display:inline-block;
 	padding-right:1.35em;
+
+	@include cbp(942px) {
+			display:block;
+			margin:0 auto 1em auto;
+			width:250px;
+			text-align: center;
+			padding-right:0;
+			
+		}
 }
 
 .prize-tile {
@@ -15,6 +24,11 @@
 	width:45%;
 	margin:2.5%;
 	text-align: center;
+
+	@include cbp(510px) {
+			width:95%;
+			
+		}
 }
 
 .prize-tile:hover img {
@@ -36,6 +50,12 @@
 .prize-tile:nth-of-type(4) {
 
 margin-top: -6em;
+
+
+@include cbp(510px) {
+			margin-top: 1em;
+			
+		}
 
 }
 
