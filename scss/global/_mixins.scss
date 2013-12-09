@@ -7,7 +7,7 @@ $L: 57em; // 912px
 $XL : 64em; // 1024px 
 $XXL : 80em; //1280px
 
-@mixin MQ($canvas) {
+@mixin bp($canvas) {
 	@if $canvas == XS {
 @media only screen and (min-width: $XS) and (max-width: $S - 1) {@content;}
 }
@@ -23,6 +23,10 @@ $XXL : 80em; //1280px
 	@else if $canvas == XL {
 @media only screen and (min-width: $XL) and (max-width: $XXL - 1) {@content;}
 }
+}
+
+@mixin cbp($canvas) {
+	@media only screen and (max-width: $canvas) {@content;}
 }
 
 /*** REM FONT-SIZE AND LINE HEIGHT ***/

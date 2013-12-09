@@ -5,6 +5,7 @@
 
 	background-color:$black-transparent;
 	z-index: 10;
+	text-align: center;
 }
 
 .main-menu {
@@ -12,6 +13,11 @@
 	width:640px;
 	margin:0 auto;
 
+	@include cbp(640px) {
+		width:100%;			
+	}
+
+	
 
 	& a {
 		display:inline-block;
@@ -25,6 +31,28 @@
 		&:hover {
 			color:$yellow;
 		}
+	
+	@include cbp(640px) {
+		@include font-size(.875,1.25);
+		margin:0 .5em;
+	}	
+
+	@include cbp(335px) {
+		@include font-size(.875,1.25);
+		margin:0 .25em;
+	}	
+	
+	
+
 	}
 
 }
+
+.main-menu a:nth-of-type(4) {
+	display:inline-block;
+	@include cbp(640px) {
+		display:none;
+	}	
+
+}
+
