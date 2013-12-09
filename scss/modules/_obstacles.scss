@@ -97,6 +97,10 @@
 	position:relative;
 	text-align: center;
 	margin:0 auto;
+
+	@include cbp(1135px) {
+		width:100%;
+		}
 }
 
 .obst-desc-headline {
@@ -106,6 +110,10 @@
 	z-index: 10;
 	margin:.5em;
 	@include rotate(-15deg);
+
+	@include cbp(1135px) {
+		@include font-size(1.85,2.25);		
+	}
 }
 
 .obst-desc-tagline {
@@ -116,12 +124,24 @@
 	z-index: 10;
 	@include rotate(-15deg);
 
+	@include cbp(1135px) {
+
+		@include font-size(1.25,1.5);		
+
+}
+
 }
 
 .obst-desc-img {
 	position:absolute;
 	top:0;left:9em;
 	width:45%;
+
+	@include cbp(1135px) {
+
+		left:30%;		
+
+}
 }
 
 
