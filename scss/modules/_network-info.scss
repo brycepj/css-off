@@ -43,14 +43,29 @@
 
 	margin:0 17em;
 
+	@include cbp(870px) {
+	     	margin: 0 3em;
+     }
+
 	& span {
 		@extend %body-text;
 
 		&:nth-of-type(1) {
 			float:left;
+
+			@include cbp(870px) {
+	     	float:none;
+	     	display:block;
+	     	margin-bottom: .5em;
+     }
 		}
 		&:nth-of-type(2) {
 			float:right;
+
+			@include cbp(870px) {
+	     	float:none;
+	     	display:block;
+     }
 		}
 	}
 }
