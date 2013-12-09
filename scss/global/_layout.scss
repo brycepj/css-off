@@ -4,7 +4,7 @@
 }
 
 section {
-	width:100.2%;
+	width:100%;
 	display:inline-block;
 	padding:4.375em 0;
 	@include box-shadow(inset 2px 0px 0px 7px $black-transparent);
@@ -13,4 +13,10 @@ section {
 	display:inline-block;
 	width:100%;
 	background:url(../../img/heading.png) repeat-x left center;
+
+	@include cbp(942px) {
+			display:block;
+			width:75%;
+			margin:0 auto;
+		}
 }

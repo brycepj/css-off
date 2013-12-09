@@ -1,3 +1,7 @@
 .obst-tile.is-selected {
 	background-color:darken($yellow,10%);
+
+	@include cbp(942px) {
+				background-color:$green;
+		}
 }

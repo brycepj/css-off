@@ -9,11 +9,29 @@
 	background-color:$red;
 	display:inline-block;
 	padding-right: 1.6em;
+
+
+	@include cbp(942px) {
+			display:block;
+			margin:0 auto 1em auto;
+			width:250px;
+			text-align: center;
+			
+		}
 }
 
 .obst-grid {
 	width:55%;
 	float:left;
+
+	@include cbp(942px) {
+		display:block;
+		width:745px;
+		float:none;
+		margin:0 auto;
+		
+		}
+
 }
 
 
@@ -33,9 +51,18 @@
 	&:hover {
 		background-color:darken($green,10%);
 		@include rotate(10deg);
+
+		@include cbp(942px) {
+		background-color:$green;
+		@include rotate(0deg);
+		}
 		
 		& img {
 			@include scale(1.5);
+
+			@include cbp(942px) {
+				@include scale(1);
+		}
 
 		}
 
@@ -90,6 +117,10 @@
 	float:left;
 	width:45%;
 	text-align: center;
+
+	@include cbp(942px) {
+		display:none;
+	}
 }
 .obst-desc {
 	display:inline-block;
@@ -148,6 +179,13 @@
 
 .obst-featured-img {
 	margin:10em 0 0 8em;
+
+	@include cbp(1135px) {
+
+		width:75%;
+		margin-left: 20%;	
+
+}
 }
 
 
