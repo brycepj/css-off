@@ -1098,9 +1098,17 @@ input[type="text"] {
   text-align: left;
   margin: 0 5em;
   -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px; }
+  -webkit-column-count: 2; }
+@media only screen and (max-width: 775px) {
+  .network-info p {
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0;
+    text-align: center; } }
+@media only screen and (max-width: 510px) {
+  .network-info p {
+    margin: 0 2em; } }
 
 .visit-us {
   margin: 0 17em; }

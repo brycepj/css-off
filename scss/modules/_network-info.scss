@@ -20,9 +20,23 @@
 	@extend %body-text;
 	margin:0 5em;
 	-moz-column-count: 2;
-       -moz-column-gap: 20px;
+       
        -webkit-column-count: 2;
-       -webkit-column-gap: 20px;
+       
+
+     @include cbp(775px) {
+     	-moz-column-count: 1;
+     	-moz-column-gap: 0;
+       	-webkit-column-count: 1;
+       	-webkit-column-gap: 0;
+       	text-align: center;
+     }
+
+	 @include cbp(510px) {
+     	margin:0 2em;
+     }
+
+
 }
 
 .visit-us {
