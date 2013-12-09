@@ -717,6 +717,7 @@ body {
   width: 100%; }
 
 input[type="text"] {
+  position: relative;
   width: 100%;
   display: block;
   padding: 1em 0 .25em .55em;
@@ -748,6 +749,7 @@ input[type="text"] {
   display: inline-block;
   background-color: #fe6336;
   position: relative;
+  z-index: 1;
   padding: 1.05em .5em;
   margin-bottom: 1em;
   -webkit-border-radius: 5px;
@@ -759,6 +761,8 @@ input[type="text"] {
   position: absolute;
   right: 0;
   top: 0; }
+.sign-up form a:hover .dropdown {
+  opacity: 1; }
 
 .team-color {
   width: 63.5%; }
@@ -771,12 +775,17 @@ input[type="text"] {
   bottom: -55px;
   left: 0;
   width: 100%;
+  opacity: 0;
   background-color: #f4ea00;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .gender .dropdown {
   bottom: -69px !important;
@@ -798,7 +807,7 @@ input[type="text"] {
   transition: all 0.2s; }
 .dropdown div[class^="dd"]:hover {
   position: relative;
-  top: -2px; }
+  top: -4px; }
 
 .dd-blue {
   background-color: #80c1d6; }
@@ -822,7 +831,7 @@ input[type="text"] {
   transition: all 0.2s; }
 .dropdown > img:hover {
   position: relative;
-  top: -2px; }
+  top: -4px; }
 
 .submit-btn-wrap {
   display: inline-block;
@@ -896,6 +905,7 @@ input[type="text"] {
 .disclaimer img {
   display: inline-block; }
 
+/*vendors*/
 /* States */
 .obst-tile.is-selected {
   background-color: #c1b900; }

@@ -38,7 +38,11 @@ $('.obst-desc-tagline').load("http://127.0.0.1:8888/css-off/ajax/"+taglineTarget
 
 
 
-
+$('.sign-up-form a').hover(function(){
+	$(this).find('.dropdown').removeClass('animated slideOutUp').addClass('animated slideInDown');
+},function(){
+	$(this).find('.dropdown').removeClass('slideInDown').addClass('slideOutUp');
+});
 
 
 

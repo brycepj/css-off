@@ -10,9 +10,8 @@
 
 input[type="text"] {
 	@extend %item-title;
-
+	position:relative;
 	width:100%;
-
 	display:block;
 	padding:1em 0 .25em .55em;
 	margin-bottom: 1em;
@@ -49,7 +48,7 @@ input[type="text"] {
 	display:inline-block;
 	background-color:$red;
 	position:relative;
-
+	z-index: 1;
 	padding:1.05em .5em;
 	margin-bottom: 1em;
 
@@ -60,6 +59,12 @@ input[type="text"] {
 		right:0;top:0;
 
 	}
+	
+	&:hover .dropdown {
+		opacity:1;
+
+	
+}
 
 }
 
@@ -69,9 +74,11 @@ input[type="text"] {
 .dropdown {
 	position:absolute; bottom:-55px;left:0;
 	width:100%;
+	opacity:0;
 	background-color:$yellow;
-	@include border-radius(5px);
 
+	@include border-radius(5px);
+	@include transition(all .2s);
 }
 
 .gender .dropdown {
@@ -89,7 +96,7 @@ input[type="text"] {
 
 	&:hover {
 		position:relative;
-		top:-2px;
+		top:-4px;
 	}
 }
 
@@ -118,7 +125,7 @@ input[type="text"] {
 
 	&:hover {
 		position:relative;
-		top:-2px;
+		top:-4px;
 	}
 }
 
