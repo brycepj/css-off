@@ -866,6 +866,9 @@ body {
 @media only screen and (max-width: 942px) {
   .sign-up .section-title {
     width: 350px; } }
+@media only screen and (max-width: 500px) {
+  .sign-up .section-title {
+    width: 240px; } }
 
 .sign-up-form {
   float: left;

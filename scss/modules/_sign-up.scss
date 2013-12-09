@@ -21,5 +21,9 @@
 			width:350px;
 			
 		}
+
+		@include cbp(500px) {
+			width:240px;
+		}
 }
 
