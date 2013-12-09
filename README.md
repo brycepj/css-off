@@ -1,1 +1,1 @@
-html, css, scss, jquery, and a little ajax
+html, css, scss, jquery, and a little ajax. 100% responsive. 
