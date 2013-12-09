@@ -57,12 +57,10 @@ input[type="text"] {
 	& .dropdown-select {
 		position:absolute;
 		right:0;top:0;
-
 	}
 	
 	&:hover .dropdown {
 		opacity:1;
-
 	
 }
 
@@ -76,7 +74,6 @@ input[type="text"] {
 	width:100%;
 	opacity:0;
 	background-color:$yellow;
-	
 	@include box-shadow(0 3px 1px 2px $black-transparent);
 	@include border-radius(5px);
 	@include transition(all .2s);
