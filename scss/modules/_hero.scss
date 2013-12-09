@@ -3,6 +3,10 @@
 	background-size:100%;
 	text-align: center;
 	@include box-shadow(0 0 0 0);
+
+	@include cbp(1135px) {
+		background-size: cover;
+	}
 }
 
 .logo-wrap {
@@ -10,6 +14,11 @@
 	max-width:34.375em;
 	
 	position:relative;
+
+	@include cbp(640px) {
+		width:50%;
+		min-width: 16.75em;
+	}
 }
 
 .hero-green-splat {
@@ -18,6 +27,10 @@
 	animation:gush 2s infinite;
 	-webkit-animation:gush 2s infinite;
 
+	@include cbp(1135px) {
+		animation:none;
+		-webkit-animation:none;
+	}
 
 }
 
@@ -42,16 +55,56 @@
 
 .triple-dare-logo {
 	position:absolute;
-	top:23%; left:23%;
+	top:20%; left:23%;
+
+	@include cbp(640px) {
+		width:60%;
+		top:20%; left:23%;
+	}
 }
 
 .hero-headline {
 	@extend %headline;
 	@include text-shadow(2px 2px $white);
 	margin-bottom:.35em;
+
+	@include cbp(1135px) {
+		@include font-size(2.15,3.5);
+		margin: .55em 0;
+	}
+
+	@include cbp(640px) {
+		@include font-size(1.85,2.5)
+	}
 }
+
+
 
 .hero-tagline {
 	@extend %header-tagline;
 
+	@include cbp(1135px) {
+		@include font-size(1.15,2);
+		
+	}
+
+	@include cbp(640px) {
+		@include font-size(.85,1.35);
+	}
+
+	@include cbp(335px) {
+		display:block;
+		margin:1em 1em 0 1em;
+	}	
+
 }
+
+
+
+
+
+
+
+
+
+

@@ -480,8 +480,8 @@ body {
   color: #f4ea00; }
 @media only screen and (max-width: 640px) {
   .main-menu a {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 14.4px;
+    font-size: 0.9rem;
     line-height: 20px;
     line-height: 1.25rem;
     margin: 0 .5em; } }
@@ -506,16 +506,27 @@ body {
   -webkit-box-shadow: 0 0 0 0;
   -moz-box-shadow: 0 0 0 0;
   box-shadow: 0 0 0 0; }
+@media only screen and (max-width: 1135px) {
+  .hero {
+    background-size: cover; } }
 
 .logo-wrap {
   display: inline-block;
   max-width: 34.375em;
   position: relative; }
+@media only screen and (max-width: 640px) {
+  .logo-wrap {
+    width: 50%;
+    min-width: 16.75em; } }
 
 .hero-green-splat {
   margin: 0 auto;
   animation: gush 2s infinite;
   -webkit-animation: gush 2s infinite; }
+@media only screen and (max-width: 1135px) {
+  .hero-green-splat {
+    animation: none;
+    -webkit-animation: none; } }
 
 @-webkit-keyframes gush {
   0%,100% {
@@ -549,12 +560,47 @@ body {
 
 .triple-dare-logo {
   position: absolute;
-  top: 23%;
+  top: 20%;
   left: 23%; }
+@media only screen and (max-width: 640px) {
+  .triple-dare-logo {
+    width: 60%;
+    top: 20%;
+    left: 23%; } }
 
 .hero-headline {
   text-shadow: 2px 2px white;
   margin-bottom: .35em; }
+@media only screen and (max-width: 1135px) {
+  .hero-headline {
+    font-size: 34.4px;
+    font-size: 2.15rem;
+    line-height: 56px;
+    line-height: 3.5rem;
+    margin: .55em 0; } }
+@media only screen and (max-width: 640px) {
+  .hero-headline {
+    font-size: 29.6px;
+    font-size: 1.85rem;
+    line-height: 40px;
+    line-height: 2.5rem; } }
+
+@media only screen and (max-width: 1135px) {
+  .hero-tagline {
+    font-size: 18.4px;
+    font-size: 1.15rem;
+    line-height: 32px;
+    line-height: 2rem; } }
+@media only screen and (max-width: 640px) {
+  .hero-tagline {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    line-height: 21.6px;
+    line-height: 1.35rem; } }
+@media only screen and (max-width: 335px) {
+  .hero-tagline {
+    display: block;
+    margin: 1em 1em 0 1em; } }
 
 .obstacles {
   background: url(../../img/texture-orange.png) center top repeat;

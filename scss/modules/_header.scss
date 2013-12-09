@@ -33,7 +33,7 @@
 		}
 	
 	@include cbp(640px) {
-		@include font-size(.875,1.25);
+		@include font-size(.9,1.25);
 		margin:0 .5em;
 	}	
 
