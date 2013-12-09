@@ -8,5 +8,18 @@
 	background-color:$blue;
 	display:inline-block;
 	padding-right:1.7em;
+
+	@include cbp(942px) {
+			display:block;
+			margin:0 auto 1em auto;
+			width:500px;
+			text-align: center;
+			padding:0;
+			
+		}
+	@include cbp(942px) {
+			width:350px;
+			
+		}
 }
 

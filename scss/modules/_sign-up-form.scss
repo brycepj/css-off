@@ -2,6 +2,16 @@
 	float:left;
 	width:23.9375em;
 	margin-top: 3em;
+
+	@include cbp(942px) {
+		width:75%;
+		float:none;
+		margin:3em auto 0 auto;
+	}
+
+	@include cbp(700px) {
+		margin-bottom: 3em;
+	}
 }
 
 .sign-up form {
@@ -53,6 +63,9 @@ input[type="text"] {
 	margin-bottom: 1em;
 
 	@include border-radius(5px);
+	@include cbp(500px) {
+		width:100%;
+	}
 
 	& .dropdown-select {
 		position:absolute;
@@ -61,6 +74,11 @@ input[type="text"] {
 	
 	&:hover .dropdown {
 		opacity:1;
+
+		@include cbp(942px) {
+			opacity:0;
+			
+		}
 	
 }
 
@@ -77,6 +95,11 @@ input[type="text"] {
 	@include box-shadow(0 3px 1px 2px $black-transparent);
 	@include border-radius(5px);
 	@include transition(all .2s);
+
+	@include cbp(942px) {
+			display:none;
+			
+		}
 }
 
 .gender .dropdown {
@@ -135,6 +158,12 @@ input[type="text"] {
 
 	@include rotate(-15deg);
 
+	@include cbp(942px) {
+		margin:2em 27%;
+	}
+
+	
+
 	& img {
 	}
 }
@@ -149,6 +178,20 @@ input[type="text"] {
 	background-color:transparent;
 	z-index: 10;
 
+@include cbp(942px) {
+@include font-size(2,2.25);
+left:12%;
+	}
+
+	@include cbp(700px) {
+		@include font-size(1.5,2);
+		left:8%;
+	}
+
+	@include cbp(500px) {
+		@include font-size(1.2,1.75);
+		left:2%;
+	}
 
 }
 

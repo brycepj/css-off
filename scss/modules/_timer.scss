@@ -2,6 +2,10 @@
 	width:26.5625em;float:left;
 	position:relative;
 	margin: 3em 0 0 5em;
+
+	@include cbp(942px) {
+		display:none;
+	}
 }
 
 .timer-img {
