@@ -19,4 +19,10 @@ section {
 			width:75%;
 			margin:0 auto;
 		}
+
+	@include cbp(510px) {
+			background:none;
+
+
+		}
 }

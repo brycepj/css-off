@@ -32,6 +32,14 @@
 		
 		}
 
+	@include cbp(745px) {
+		width:500px;
+	}
+
+	@include cbp(510px) {
+		width:250px;
+	}
+
 }
 
 

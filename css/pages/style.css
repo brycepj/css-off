@@ -437,6 +437,9 @@ section {
     display: block;
     width: 75%;
     margin: 0 auto; } }
+@media only screen and (max-width: 510px) {
+  .section-header {
+    background: none; } }
 
 /* BASE STYLES */
 * {
@@ -632,6 +635,12 @@ body {
     width: 745px;
     float: none;
     margin: 0 auto; } }
+@media only screen and (max-width: 745px) {
+  .obst-grid {
+    width: 500px; } }
+@media only screen and (max-width: 510px) {
+  .obst-grid {
+    width: 250px; } }
 
 .obst-tile {
   position: relative;
