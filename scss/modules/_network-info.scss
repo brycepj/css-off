@@ -1,0 +1,61 @@
+.network-info {
+		position: relative;
+		border-top: 7px solid $black-transparent;
+		border-bottom: 7px solid $black-transparent; 
+		box-shadow: none!important;
+		text-align: center;
+}
+
+.kn-logo {
+	margin:0 auto;
+	position:absolute; top:-40px; left:43%;
+}
+
+.network-title {
+	@extend %header-tagline;
+}
+
+.network-info p {
+	text-align: left;
+	@extend %body-text;
+	margin:0 5em;
+	-moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+}
+
+.visit-us {
+
+	margin:0 17em;
+
+	& span {
+		@extend %body-text;
+
+		&:nth-of-type(1) {
+			float:left;
+		}
+		&:nth-of-type(2) {
+			float:right;
+		}
+	}
+}
+
+.vu-title {
+	@extend %header-tagline;
+}
+
+.disclaimer {
+ 
+	text-align: center;
+	
+	& img {
+		display:inline-block;
+	}
+}
+
+.creative-commons {
+	@extend %body-text;
+}
+
+

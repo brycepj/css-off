@@ -417,7 +417,7 @@ table {
   color: #f4ea00; }
 
 .inner {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto; }
 
 section {
