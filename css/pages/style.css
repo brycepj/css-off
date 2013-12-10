@@ -742,6 +742,9 @@ body {
 @media only screen and (max-width: 1135px) {
   .obst-desc {
     width: 100%; } }
+@media only screen and (max-width: 942px) {
+  .obst-desc {
+    display: none; } }
 
 .obst-desc-headline {
   position: relative;
@@ -759,6 +762,9 @@ body {
     font-size: 1.85rem;
     line-height: 36px;
     line-height: 2.25rem; } }
+@media only screen and (max-width: 942px) {
+  .obst-desc-headline {
+    display: none; } }
 
 .obst-desc-tagline {
   display: block;
@@ -776,6 +782,9 @@ body {
     font-size: 1.25rem;
     line-height: 24px;
     line-height: 1.5rem; } }
+@media only screen and (max-width: 942px) {
+  .obst-desc-tagline {
+    display: none; } }
 
 .obst-desc-img {
   position: absolute;
@@ -785,6 +794,9 @@ body {
 @media only screen and (max-width: 1135px) {
   .obst-desc-img {
     left: 30%; } }
+@media only screen and (max-width: 942px) {
+  .obst-desc-img {
+    display: none; } }
 
 .obst-featured-img {
   margin: 10em 0 0 8em; }
@@ -860,12 +872,9 @@ body {
   .sign-up .section-title {
     display: block;
     margin: 0 auto 1em auto;
-    width: 500px;
+    width: 350px;
     text-align: center;
     padding: 0; } }
-@media only screen and (max-width: 942px) {
-  .sign-up .section-title {
-    width: 350px; } }
 @media only screen and (max-width: 500px) {
   .sign-up .section-title {
     width: 240px; } }
@@ -1093,6 +1102,12 @@ input[type="text"] {
   position: absolute;
   top: -40px;
   left: 43%; }
+@media only screen and (max-width: 510px) {
+  .kn-logo {
+    left: 35%; } }
+@media only screen and (max-width: 400px) {
+  .kn-logo {
+    left: 25%; } }
 
 .network-info p {
   text-align: left;

@@ -140,6 +140,10 @@
 	@include cbp(1135px) {
 		width:100%;
 		}
+
+	@include cbp(942px) {
+		display:none;
+	}
 }
 
 .obst-desc-headline {
@@ -152,6 +156,10 @@
 
 	@include cbp(1135px) {
 		@include font-size(1.85,2.25);		
+	}
+
+	@include cbp(942px) {
+		display:none;
 	}
 }
 
@@ -169,6 +177,10 @@
 
 }
 
+@include cbp(942px) {
+		display:none;
+	}
+
 }
 
 .obst-desc-img {
@@ -181,6 +193,10 @@
 		left:30%;		
 
 }
+
+@include cbp(942px) {
+		display:none;
+	}
 }
 
 
