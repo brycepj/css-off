@@ -2,6 +2,33 @@
    
 
 
+/*lazy loading*/
+
+//set all data-atrributes to src & add lazy class
+
+$('img').each(function(){
+
+	var src = $(this).attr('src');
+	$(this).attr('src','').attr('data-original',src).addClass('lazy');
+
+});
+
+//call lazyLoad function add fadeIn
+
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty",
+        effect : "fadeIn"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 500);
+});
+
+
 $('.obst-tile').click(function(){
 
 	$(this).parent().children().removeClass('is-selected');
@@ -43,6 +70,21 @@ $('.sign-up-form a').hover(function(){
 },function(){
 	$(this).find('.dropdown').removeClass('slideInDown').addClass('slideOutUp');
 });
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
 
 
 
