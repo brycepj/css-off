@@ -28,6 +28,7 @@ $(window).bind("load", function() {
     }, 500);
 });
 
+//done lazy load
 
 $('.obst-tile').click(function(){
 
